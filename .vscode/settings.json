@@ -1,0 +1,7 @@
+{
+  "rust-analyzer.cargo.target": "wasm32-unknown-unknown",
+  "rust-analyzer.check.allTargets": false,
+  "rust-analyzer.check.extraArgs": [
+    "--target=wasm32-unknown-unknown"
+  ],
+}

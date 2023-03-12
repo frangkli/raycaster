@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "rust: cargo build --release",
+			"type": "cargo",
+			"command": "build",
+			"args": ["--release"],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+		},
+		{
+			"label": "w4: run wasm executable",
+			"type": "shell",
+			"command": "w4.exe",
+			"args": [
+				"run-native",
+				"target\\wasm32-unknown-unknown\\release\\raycaster.wasm"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always",
+				"panel": "new",
+				"close": true,
+			}
+		},
+	]
+}
