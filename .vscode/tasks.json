@@ -30,7 +30,10 @@
 				"reveal": "always",
 				"panel": "new",
 				"close": true,
-			}
+			},
+			"dependsOn": [
+				"rust: cargo build --release"
+			]
 		},
 	]
 }

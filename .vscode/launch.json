@@ -11,11 +11,11 @@
       "cargo": {
         "args": [
           "build",
-          "--bin=first_rust_project",
-          "--package=first_rust_project"
+          "--bin=raycaster",
+          "--package=raycaster"
         ],
         "filter": {
-          "name": "first_rust_project",
+          "name": "raycaster",
           "kind": "bin"
         }
       },
